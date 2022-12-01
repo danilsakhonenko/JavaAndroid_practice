@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="3dp"
+    android:gravity="center"
+    tools:context=".Activity2">
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/TextViewStyle"
+        android:text="1"
+         />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/TextViewStyle"
+        android:text="2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/TextViewStyle"
+        android:text="3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/TextViewStyle"
+        android:text="4" />
+
+    <TextView
+        android:id="@+id/textView5"
+        style="@style/TextViewStyle"
+        android:text="5" />
+
+    <TextView
+        android:id="@+id/textView6"
+        style="@style/TextViewStyle"
+        android:text="6" />
+
+    <TextView
+        android:id="@+id/textView7"
+        style="@style/TextViewStyle"
+        android:text="7" />
+
+    <TextView
+        android:id="@+id/textView8"
+        style="@style/TextViewStyle"
+        android:text="8" />
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.07"
+        android:text="Сообщения"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/msgListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/sms_btn"
+        style="@style/main_btn"
+        android:onClick="SmsBtnClick"
+        android:text="SMS"
+        app:cornerRadius="20dp" />
+
+    <Button
+        android:id="@+id/mms_btn"
+        style="@style/main_btn"
+        android:onClick="EmailBtnClick"
+        android:text="Email"
+        app:cornerRadius="20dp" />
+
+    <Button
+        android:id="@+id/add_contacts"
+        style="@style/main_btn"
+        android:onClick="addContactBtnClick"
+        android:text="новый контакт"
+        app:cornerRadius="20dp" />
+
+</LinearLayout>

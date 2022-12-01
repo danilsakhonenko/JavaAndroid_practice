@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/notification_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Заголовок уведомления"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/notification_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notification_title"
+        android:layout_toEndOf="@+id/notification_image"
+        android:text="Текст уведомления в строке состояния\nВторая строка текста\n..."
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/notification_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notification_title"
+        android:src="@android:drawable/sym_def_app_icon" />
+
+</RelativeLayout>
